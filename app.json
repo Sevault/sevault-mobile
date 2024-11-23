@@ -1,0 +1,68 @@
+{
+  "expo": {
+    "name": "SevaultWallet",
+    "slug": "bitgesell-wallet",
+    "scheme": "bitgesell-wallet",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/adaptive-icon.png",
+    "userInterfaceStyle": "dark",
+    "androidStatusBar": {
+      "backgroundColor": "#FFBA0A",
+      "translucent": false
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.naftalimurgor.bitgesellwallet"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/sevault.png",
+        "backgroundColor": "#824FF4"
+      },
+      "package": "com.naftalimurgor.bitgesellwallet",
+      "jsEngine": "hermes",
+      "enableProguardInReleaseBuilds": true
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "experiments": {
+      "tsconfigPaths": true
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-build-properties",
+        {
+          "android": {
+            "enableProguardInReleaseBuilds": true,
+            "enableShrinkResourceslnReleaseBuilds": true,
+            "useLegacyPackaging": true
+          }
+        }
+      ],
+      [
+        "expo-barcode-scanner",
+        {
+          "cameraPermission": "Allow $(PRODUCT_NAME) to access camera."
+        }
+      ]
+    ],
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "e47f78c1-540b-40ba-925e-7ccabe299d23"
+      }
+    },
+    "owner": "nmurgor"
+  },
+  "web": {
+    "bundler": "metro"
+  }
+}
