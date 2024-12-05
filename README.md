@@ -1,7 +1,4 @@
 # Sevault-mobile
-
-<img src="Icon.png" style="height: 60px;"/>
-
 React Native expo codebase for Bitgesell Sevault Wallet for Android.
 
 <img src="hero-image.png" alt="Responsive Local Image" style="width: 300px;">
